@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-from typing import List, Any
-
 """
 Python module for stack operations
 Teddy Muli
 SCT211-0023/2022
 """
+
+from typing import List, Any
 
 
 def push(stack: List, element: Any) -> List:
@@ -30,7 +30,13 @@ def is_empty(stack: List) -> bool:
     """
     return len(stack) == 0
 
+def is_full(stack: List) -> bool:
+    """
+    Check if the stack is full.
+    Return True, else False
+    """
+    return len(stack) >= 10
+
 def stack_length(stack: List) -> List:
     """Returns the length of a stack"""
     return len(stack)
-
